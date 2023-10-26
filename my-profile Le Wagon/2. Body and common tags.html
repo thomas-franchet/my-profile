@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Intro to Web Development</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="s2imsN_WNF-L8iUhOXnNF3kIw_vUCtKN5ic8eFQgn74kzeQGz1FxE8m0WCwt6aM75Ll9x1MzT5C7eLJO0IoUUg" />
+    <meta name="action-cable-url" content="/cable" />
+    <link rel="stylesheet" href="https://d17tlt8o5zszqz.cloudfront.net/assets/application-761b00f45261c98f955770ff99668d1a9422124dfd9d2f74ec3cd31d7f0561b4.css" media="all" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="https://d17tlt8o5zszqz.cloudfront.net/assets/asset_application-461f1694b2b7e3a963ba3561c6010ab6abb87aeb0f2faea037417e75d65b8a53.css" media="all" data-turbolinks-track="reload" />
+    
+    <link rel="icon" type="image/png" href="https://d17tlt8o5zszqz.cloudfront.net/assets/favicon-1750e9605b5035dd6165aaae921c656a5faac0ff262ef53af7863881fee93526.png" />
+    <script src="https://d17tlt8o5zszqz.cloudfront.net/assets/application-cec4c5975422d0911357b87cad4d24a92493773f8cf23f116b1d73b008fa2e3f.js" data-turbolinks-track="reload" defer="defer"></script>
+  </head>
+  <body>
+    <div class="page-container" data-controller="push-state navigation--navbar" data-push-state-original-url="https://learn.lewagon.com/c/7176/b/287">
+      <div class="flashes-container">
+</div>
+
+      <div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="navbar-wagon-left">
+      <a class="d-flex align-items-center navbar-wagon-brand mr-3" href="/dashboard">
+        <img class="rounded" src="https://wagon-rc3-imgproxy.herokuapp.com/y84ChCBzI1bEOJ4JGO0VJRuYE5scw-JY1yBAqjlJ9B4/s:70:70/plain/s3://wagon-rc3/s95bs1t80bhch37n6mnymunmfdqz" /><div><span>Le Wagon</span><span class="subtitle">Initiation to coding / Intiation au codage</span></div>
+</a>
+    
+        <a class="navbar-wagon-item navbar-wagon-link " href="/batches/4641/teachers">
+  Teachers
+</a>
+        <a class="navbar-wagon-item navbar-wagon-link " href="/batches/4641/learners">
+  Classmates
+</a>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right d-none d-sm-flex">
+
+      <div class="d-sm-flex align-items-center"
+           data-controller=" "
+           data-ticket-notifs-cable-batch-id="4641"
+           data-ticket-notifs-cable-user-id="124373"
+           data-wall-notifs-cable-batch-id="4641"
+           data-wall-notifs-cable-count="0"
+           data-wall-notifs-cable-current-user-id="124373"
+           data-wall-notifs-cable-notif-enabled="true">
+        <span class="mr-3 text-light cursor-pointer" data-wall-notifs-cable-target="bell" data-ticket-notifs-cable-target="bell" data-action="click->wall-notifs-cable#alertSettings click->ticket-notifs-cable#alertSettings"></span>
+
+
+            <a class="navbar-wagon-item navbar-wagon-link active" href="/c/7176/b/287">
+  Content
+</a>
+            <a class="navbar-wagon-item navbar-wagon-link " href="/classes/7176/forum">
+  Forum
+</a>
+
+
+      </div>
+
+        <div class="navigation-vertical-separator"></div>
+        <span class="text-white mx-3 mb-1 text-overflow-ellipsis">Intro to Web Development</span>
+
+    
+
+
+    <!-- Avatar with dropdown menu -->
+    <div class="dropdownable dropdown  pr-0">
+  <a class="d-flex align-items-center navbar-wagon-brand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+    <img class="rounded avatar-sm" id="navbar-wagon-menu" src="https://d17tlt8o5zszqz.cloudfront.net/assets/generic-avatar-e5f1bde223bcf07e93c39e91eaa2d4a79c7ad63a2161f5389f9c2ebaed1331dc.png" />
+    
+</a>  <div class="dropdown-menu navigation-dropdown dropdown-menu-right">
+    
+        <div class="main-links">
+            <a class="dropdown-item" href="/profile/edit">
+              Edit profile
+</a>            <a class="dropdown-item" href="/terms_of_use">
+              Terms of use and privacy policy
+</a>          <a class="dropdown-item" rel="nofollow" data-method="delete" href="/users/sign_out">
+            <i class="fas fa-sign-out-alt mr-2"></i>Log out
+</a>        </div>
+
+  </div>
+</div>
+  </div>
+</div>
+        
+
+<div class="course-container spaced "
+     data-controller="students--enrollment-cable block-solution-sharing "
+     data-action="videoended->students--enrollment-cable#createVideoCompletion slidedeckended->students--enrollment-cable#createSlideDeckCompletion"
+     data-students--enrollment-cable-enrollment-id="266127"
+     data-students--enrollment-cable-block-id="287">
+  
+<nav class="lessons-nav sidenav students__lessons-nav" id="sidenav-lessons" data-controller="sidenav lessons" data-target="toggle-sidenav.sidenav">
+    <a class="back-link-gray mt-4 mb-2 pl-3" href="/dashboard"><span><i class="fas fa-arrow-left"></i>Back to my courses</span></a>
+
+  <section data-lessons-target="lessonList"
+            data-current-account="le-wagon"
+            data-active-lesson-id="517"
+            data-account-with-cname="true">
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav active open "
+     data-lesson-id="517"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51550"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51550">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Introduction</span>
+
+      <a class="absolute-link" href="/c/7176/b/287"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="517" href="#">
+      <i class="fas fa-chevron-down" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51550"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav "
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51550"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink  active " data-block-id="287" href="/c/7176/b/287">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Intro to Web Development
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   " data-block-id="290" href="/c/7176/b/290">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Installing developer tools
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   " data-block-id="283" href="/c/7176/b/283">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Create your first project
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   " data-block-id="284" href="/c/7176/b/284">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Developer tools quiz
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="525"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51551"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51551">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">HTML Basics</span>
+
+      <a class="absolute-link" href="/c/7176/b/288"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="525" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51551"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51551"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="288" href="/c/7176/b/288">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      1. Skeleton and head
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="289" href="/c/7176/b/289">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      2. Body and common tags
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="285" href="/c/7176/b/285">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      HTML summary
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="292" href="/c/7176/b/292">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Code your profile
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="286" href="/c/7176/b/286">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      HTML quiz
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="291" href="/c/7176/b/291">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Extra - adding icons
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="538"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51552"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51552">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">CSS Basics</span>
+
+      <a class="absolute-link" href="/c/7176/b/323"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="538" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51552"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51552"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="323" href="/c/7176/b/323">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Syntax and first properties
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="293" href="/c/7176/b/293">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      CSS summary
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="294" href="/c/7176/b/294">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      CSS quiz
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="539"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51553"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51553">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Fonts and colors</span>
+
+      <a class="absolute-link" href="/c/7176/b/295"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="539" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51553"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51553"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="295" href="/c/7176/b/295">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      1. Design fonts and colors
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="296" href="/c/7176/b/296">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      2. How to use great colors
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="297" href="/c/7176/b/297">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      3. How to use great fonts
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="298" href="/c/7176/b/298">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Design your profile
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="313" href="/c/7176/b/313">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Are you a designer yet?
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="541"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51554"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51554">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Id and class</span>
+
+      <a class="absolute-link" href="/c/7176/b/302"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="541" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51554"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51554"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="302" href="/c/7176/b/302">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Advanced CSS selectors
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="303" href="/c/7176/b/303">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      CSS selectors summary
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="315" href="/c/7176/b/315">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      CSS selectors quiz
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="540"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51555"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51555">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Structuring with divs</span>
+
+      <a class="absolute-link" href="/c/7176/b/299"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="540" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51555"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51555"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="299" href="/c/7176/b/299">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      1. What is a div?
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="300" href="/c/7176/b/300">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      2. Div design techniques
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="301" href="/c/7176/b/301">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Div summary
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="314" href="/c/7176/b/314">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Div quiz
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="542"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51556"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51556">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Let&#39;s finish your profile</span>
+
+      <a class="absolute-link" href="/c/7176/b/304"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="542" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51556"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51556"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="304" href="/c/7176/b/304">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Design your profile
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="305" href="/c/7176/b/305">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Part-1: Profile div structure
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="306" href="/c/7176/b/306">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Part 2: Profile finishing touches
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="543"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51557"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51557">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Responsive Design</span>
+
+      <a class="absolute-link" href="/c/7176/b/324"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="543" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51557"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51557"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="324" href="/c/7176/b/324">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Media queries in CSS
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="308" href="/c/7176/b/308">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Build a responsive container
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="327" href="/c/7176/b/327">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      What is Responsive Design?
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="544"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51558"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51558">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Put your profile online</span>
+
+      <a class="absolute-link" href="/c/7176/b/328"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="544" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51558"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51558"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="328" href="/c/7176/b/328">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":rocket:" alt="🚀" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Submit your profile, finally!
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                <div class="lesson-sub-nav-item-progress"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+  <g id="Icons-/-Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <g id="simple-remove" transform="translate(4.000000, 4.000000)" stroke="#111111" stroke-width="1">
+      <path d="M16,0 L0,16" id="Shape"></path>
+      <path d="M16,16 L0,0" id="Shape"></path>
+    </g>
+  </g>
+</svg>
+</div>
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="2641" href="/c/7176/b/2641">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      How to publish your modifications
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="545"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51559"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51559">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Building a UI kit</span>
+
+      <a class="absolute-link" href="/c/7176/b/326"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="545" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51559"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51559"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="326" href="/c/7176/b/326">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      1. Simple CSS components
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="337" href="/c/7176/b/337">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      2. Building a banner
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="309" href="/c/7176/b/309">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Let&#39;s build your UI kit
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="330" href="/c/7176/b/330">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      UI components quiz
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="546"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51560"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51560">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Flexbox basics</span>
+
+      <a class="absolute-link" href="/c/7176/b/338"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="546" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51560"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51560"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="338" href="/c/7176/b/338">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      1. Coding a card with flexbox
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="339" href="/c/7176/b/339">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      2. Coding a card grid
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="322" href="/c/7176/b/322">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Build your card grid
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="329" href="/c/7176/b/329">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":thinking_face:" alt="🤔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f914.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Are you a flex student?
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="547"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51561"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51561">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">3rd-party services</span>
+
+      <a class="absolute-link" href="/c/7176/b/340"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="547" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51561"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51561"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="340" href="/c/7176/b/340">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Embedding a Typeform
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="2642" href="/c/7176/b/2642">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Put your landing online
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="341" href="/c/7176/b/341">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":rocket:" alt="🚀" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Submit your startup website
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                <div class="lesson-sub-nav-item-progress"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+  <g id="Icons-/-Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <g id="simple-remove" transform="translate(4.000000, 4.000000)" stroke="#111111" stroke-width="1">
+      <path d="M16,0 L0,16" id="Shape"></path>
+      <path d="M16,16 L0,0" id="Shape"></path>
+    </g>
+  </g>
+</svg>
+</div>
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="548"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51562"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51562">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Domain Name and Analytics</span>
+
+      <a class="absolute-link" href="/c/7176/b/372"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="548" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51562"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51562"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="372" href="/c/7176/b/372">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Setting up a Domain Name
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="371" href="/c/7176/b/371">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Google Analytics
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+      <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+      <nav class="lesson-nav  "
+     data-lesson-id="533"
+     data-current-account="le-wagon"
+     data-controller="collapsible"
+     data-sidenav-target="lesson"
+     data-block-solution-sharing-target="lesson"
+     data-klass-lesson-id="51563"
+     data-action="open->collapsible#toggleCollapse">
+  <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+      <small class="icon-container"
+             data-students--enrollment-cable-target="lessonDot"
+             data-lesson-id="51563">
+        <i class="fas fa-circle text-gray-200"></i>
+      </small>
+
+    <span class="lesson-link text-overflow-ellipsis">Extra Resources</span>
+
+      <a class="absolute-link" href="/c/7176/b/280"></a>
+
+      
+
+
+    <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="533" href="#">
+      <i class="fas fa-chevron-right" data-collapsible-target="icon" data-dragover-target="toggleChevronOnEnter" data-block-solution-sharing-target="arrow" data-klass-lesson-id="51563"></i>
+</a>  </div>
+
+    <nav class="lesson-nav-sub-items nav d-none"
+         data-controller="dropdown"
+         data-collapsible-target="content"
+         data-block-solution-sharing-target="subItems blocksHeader"
+         data-klass-lesson-id="51563"
+         data-dropdown-opened-toggle-button-class="fa-chevron-down"
+         data-dropdown-closed-toggle-button-class="fa-chevron-right">
+
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="280" href="/c/7176/b/280">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Pimp your Sublime Text
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="281" href="/c/7176/b/281">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Sublime Text settings 
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="282" href="/c/7176/b/282">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":tv:" alt="📺" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4fa.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Code faster with Emmet
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>
+        <a class="nav-link sidenav-sublink   inactive" data-block-id="307" href="/c/7176/b/307">
+            <div class="lesson-nav-item w-100 justify-content-start">
+    <span class="block-emoji-icon">
+        <img draggable="false" title=":memo:" alt="📝" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4dd.svg" class="emoji" style="height: 1em; margin: 0px;">
+    </span>
+
+    <span class="nav-link-text ml-1 ">
+      Profile with a fixed sidebar
+    </span>
+    <div class="ml-auto">
+    </div>
+  </div>
+
+
+          <div class="d-flex align-items-center">
+                
+          </div>
+</a>    </nav>
+</nav>
+
+  </section>
+
+
+  
+</nav>
+
+
+  <!-- block -->
+  <main>
+    <div class="blocks-header">
+      <div data-action="click->toggle-sidenav#toggleSidenav" data-target="toggle-sidenav.icon" class="sidenav-toggle d-flex d-sm-none align-items-center justify-content-center">
+        <i class="mdi mdi-backburger"></i>
+      </div>
+      <header class="white-block-header " data-target=toggle-sidenav.header>
+        <div class="flex-center">
+            <div style="width:32px"></div>
+
+          <h2>Intro to Web Development</h2>
+        </div>
+
+        <div class="d-flex">
+          <div class="d-flex w-100 align-items-center">
+            
+            
+          </div>
+
+          <div class="d-flex mr-3">
+              <a class="btn btn-primary  " style="width: 114px" data-action="click-&gt;students--enrollment-cable#createCtaCompletion" data-target="students--enrollment-cable.markAsSeenBtn" href="">I&#39;m done</a>
+
+          </div>
+
+            <a class="btn btn-nav-block" data-controller="utilities--tooltips" data-title="Installing developer tools" href="/c/7176/b/290">
+              <i class="fas fa-arrow-right"></i>
+</a>        </div>
+      </header>
+    </div>
+    <div class="modal" id="variation_modal" tabindex="-1" role="dialog" aria-hidden="true" data-modal-form-target="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" data-controller="modal-form">
+      <div class="modal-header">
+  <h5 class="modal-title">Please inform the following:</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form data-type="html" data-action="ajax:success-&gt;modal-form#onPostSuccess ajax:error-&gt;modal-form#onPostError" class="simple_form new_challenge_variation_form" id="new_challenge_variation_form" action="/blocks/287/blocks/all_variations" accept-charset="UTF-8" data-remote="true" method="post">
+  <div class="modal-body">
+    <div class="form-group string required challenge_variation_form_section_name mb-3"><label class="form-control-label string required" for="challenge_variation_form_section_name">Section name</label><input class="form-control string required" required="required" aria-required="true" type="text" name="challenge_variation_form[section_name]" id="challenge_variation_form_section_name" /></div>
+    <div class="form-group string required challenge_variation_form_first_variation_name mb-0"><label class="form-control-label string required" for="challenge_variation_form_first_variation_name">First variation name</label><input class="form-control string required" required="required" aria-required="true" type="text" name="challenge_variation_form[first_variation_name]" id="challenge_variation_form_first_variation_name" /></div>
+    <div class="form-group string optional challenge_variation_form_first_variation_description mb-3"><label class="form-control-label string optional" for="challenge_variation_form_first_variation_description">First variation description</label><input class="form-control string optional" type="text" name="challenge_variation_form[first_variation_description]" id="challenge_variation_form_first_variation_description" /></div>
+    <div class="form-group string required challenge_variation_form_second_variation_name mb-0"><label class="form-control-label string required" for="challenge_variation_form_second_variation_name">Second variation name</label><input class="form-control string required" required="required" aria-required="true" type="text" name="challenge_variation_form[second_variation_name]" id="challenge_variation_form_second_variation_name" /></div>
+    <div class="form-group string optional challenge_variation_form_second_variation_description mb-0"><label class="form-control-label string optional" for="challenge_variation_form_second_variation_description">Second variation description</label><input class="form-control string optional" type="text" name="challenge_variation_form[second_variation_description]" id="challenge_variation_form_second_variation_description" /></div>
+  </div>
+  <div class="modal-footer">
+    <input type="submit" name="commit" value="Add variation section" class="btn btn-primary" data-disable-with="Add variation section" />
+  </div>
+</form>
+    </div>
+  </div>
+</div>
+
+    <div class="video-wrapper">
+    <p><p>In this video you will learn how a website works, as well as how to use Sublime Text and Google Chrome to work on a new project. You can download the presentation in <a href="https://github.com/lewagon/html-css-lectures/raw/master/Web%20Development%20-%20Introduction.key" target='_blank'>keynote</a> or in <a href="https://github.com/lewagon/html-css-lectures/raw/master/Web%20Development%20-%20Introduction.pdf" target='_blank'>PDF</a>.</p>
+</p>
+
+    <div class="player"
+         data-controller="plyr"
+         data-plyr-provider="vimeo"
+         data-plyr-embed-id="292322308"
+         data-plyr-portrait-value="false"
+         data-plyr-starts-at-value="0"></div>
+
+</div>
+
+  </main>
+</div>
+
+    </div>
+  </body>
+</html>
